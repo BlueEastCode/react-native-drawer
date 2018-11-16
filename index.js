@@ -208,7 +208,7 @@ export default class Drawer extends Component {
 
     switch (this.props.type) {
       case 'overlay':
-        drawerProps[this.props.side] = Math.round(-this.getDeviceLength() + this._offsetOpen + this._length)
+        Math.round(-this.getDeviceLength() + this._offsetOpen + this._length)
         mainProps[this.props.side] = this._offsetClosed
         break
       case 'static':
